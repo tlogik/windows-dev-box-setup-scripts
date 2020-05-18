@@ -26,6 +26,8 @@ executeScript "SystemConfiguration.ps1";
 executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
+executeScript "Browsers.ps1";
+executeScript "NetDeveloperCommonTools";
 
 executeScript "WSL.ps1";
 RefreshEnv
@@ -37,7 +39,8 @@ Install-Module -Force Az
 choco install -y microsoftazurestorageexplorer
 choco install -y azure-data-studio
 choco install -y sql-server-management-studio
-choco install -y dotnetcore-sdk
+
+
 
 #--- Tools ---
 #--- Installing VS and VS Code with Git
@@ -46,6 +49,20 @@ Update-SessionEnvironment #refreshing env due to Git install
 
 #--- UWP Workload and installing Windows Template Studio ---
 choco install -y visualstudio2019-workload-azure
+
+#-- VARIOUS --
+choco install -y kdiff3
+choco install -y zoom
+choco install -y adobereader
+choco insatall -y dashlane
+
+#-- CHAT --
+choco install -y microsoft-teams
+choco install -y slack
+
+#-- LENOVO STUFF --
+choco install -y lenovo-thinkvantage-system-update
+
 
 #--- reenabling critial items ---
 Enable-UAC

@@ -52,6 +52,7 @@ choco install -y visualstudio2019-workload-azure
 
 #-- VARIOUS --
 choco install -y kdiff3
+choco install -y gitextensions
 choco install -y zoom
 choco install -y adobereader
 choco insatall -y dashlane
